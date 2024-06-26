@@ -96,4 +96,21 @@ This document covers the most commonly asked ReactJS interview questions and the
 
 18. **What is the difference between `Link` and `NavLink` components in React Router?**
 
-    The `Link` component is used to create navigation links between routes in a React Router application. The `NavLink` component is a special type of `Link` that adds an "active" class to the link when the current URL matches the link's `to` prop. This makes it easier to style the active link, which is useful for creating navigation menus or
+    The `Link` component is used to create navigation links between routes in a React Router application. The `NavLink` component is a special type of `Link` that adds an "active" class to the link when the current URL matches the link's `to` prop. This makes it easier to style the active link, which is useful for creating navigation menus or breadcrumbs.
+
+19. **How do you handle nested routes in React Router?**
+
+    Nested routes in React Router allow you to render child components within the context of a parent route. You can define nested routes by nesting `Route` components within the component rendered by the parent route. The child routes will have access to the same URL parameters and context as the parent route. This allows you to create complex, hierarchical navigation structures in your React application.
+
+20. **Explain the use of the `Switch` component in React Router.**
+
+    The `Switch` component in React Router ensures that only one `Route` is rendered at a time. It iterates through its child `Route` components and renders the first one whose path matches the current URL. This is useful for preventing multiple routes from being rendered simultaneously, which can lead to unexpected behavior. The `Switch` component is often used to ensure that more specific routes are rendered before more general routes.
+
+## React Testing
+
+21. **What are the different types of testing in a React application?**
+
+    - **Unit testing**: Testing individual components or functions in isolation.
+    - **Integration testing**: Testing how components work together.
+    - **Snapshot testing**: Comparing the rendered output of a component to a saved snapshot.
+    - **End-to-end (E2E) testing**
